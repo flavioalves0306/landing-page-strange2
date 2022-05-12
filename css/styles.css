@@ -13,9 +13,17 @@ body {
     background: linear-gradient(90deg, #000, #000e 25%, #0000), url(../image/background.png);
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: right;
     padding: 80px 128px 50px 128px;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px 30px 25px 30px;
+        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.3)), url(../image/background.png);  
+    }
 }
 /* MENU-NAVEGAÇÃO */
 .menu-container {
@@ -124,7 +132,6 @@ body {
     border: #E62721;
     transition: all .3s ease-in-out;
 }
-
 
 .content-main__social ul li i {
     font-size: 1.5rem;
