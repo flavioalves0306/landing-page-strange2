@@ -1,6 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+
 body {
     height: 100vh; /* definimos uma altura para o body porque por padrão ele é um elemento "block" e só pega 100% da lagura */
-    background: linear-gradient(90deg, #000 5%, #000e 25%, #0000), url(../image/background.png);
+    background: linear-gradient(90deg, #000, #000e 25%, #0000), url(../image/background.png);
     background-size:cover;
     background-repeat: no-repeat;
+    padding: 80px 128px 50px 128px;
 }
+/* MENU NAVIGATION */
+.menu-container {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container__links-navegation {
+    display: flex;
+    gap: 32px; 
+}
+
+.menu-container__links-navegation a {
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+    padding: 6px;
+    transition: all .4s ease-in-out;
+}
+
+.menu-container__links-navegation a:hover {
+    background-color: #E62721;
+}
+/* MENU NAVIGATION */
